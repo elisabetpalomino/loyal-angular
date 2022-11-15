@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <header></header>
+        <nav>
+            <li>
+                <a href="#formularios">Formularios</a>
+            </li>
+        </nav>
+        <section>
+            <form action="endpoint.html" method="get">
+                <fieldset>
+                    <legend>Formularios</legend>
+                    <label for="">Username</label>
+                    <input type="text" name="username" id="username" required>
+                    <label for="">Password</label>
+                    <input type="password" name="password" id="password" required>
+                    <label for="">Rango edad</label>
+                    <input type="number" step="5" min="0" max="15" required>
+
+                    <hr>
+                    <label for="">Equipo de futbol</label>
+                    <select name="" id="" required>
+                        <option value=""></option>
+                        <option value="">Equipo1</option>
+                        <option value="">Equipo2</option>
+                        <option value="">Equipo3</option>
+                    </select>
+                    <hr>
+                    <label for="">Turno</label>
+                    Mañana: <input type="checkbox" value="M" name="mañana">
+                    Noche: <input type="checkbox" value="N" name="noche">
+                    <hr>
+                    <label for="">Es de river?</label>
+                    SI: <input type="radio" value="SI" name="esderiver">
+                    NO: <input type="radio" value="NO" name="esderiver">
+                    <hr>
+
+                    <button type="submit">Enviar</button>
+
+
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <fieldset>
+                <legend>Tablas</legend>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Col1</th>
+                            <th>Col2</th>
+                            <th>Col3</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Fil1 Col1</td>
+                            <td>Fil1 Col2</td>
+                            <td>Fil1 Col3</td>
+                            <td>
+                                <button>Eliminar</button>
+                                <a href="#">Editar</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Fil2 Col1-Col3</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Footer</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </fieldset>
+        </section>
+        <aside></aside>
+    </main>
+    <footer> </footer>
+</body>
+
+</html>

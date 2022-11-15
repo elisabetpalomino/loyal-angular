@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caja</title>
+    <style>
+        * {
+            /* font-size: 18px; */
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 100px;
+            height: 100px;
+
+            padding: 10px 5px 2px 15px;
+            border: 5px solid red;
+            margin: 10px 5px 15px 2px;
+            display: inline-block;
+            box-sizing: content-box;
+        }
+
+        .contenedor_texto #contenedor_caja p {
+            color: blue;
+        }
+
+        .lista {
+            font-size: 2rem;
+        }
+
+        .lista li:first-child {
+            color: blueviolet !important;
+        }
+
+        .lista li:last-child {
+            color: aqua !important;
+        }
+
+        /* Aplico a los pares */
+
+        .lista li:nth-child(even) {
+            color: rgb(0, 255, 42);
+        }
+
+        .lista li:nth-child(odd) {
+            color: rgb(255, 38, 0);
+        }
+
+        /* Lista hermanos */
+
+        .lista-hermanos>li>a {
+            font-size: 2rem;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+
+        </header>
+
+        <body>
+            <section>
+                <h2>Modelo de caja</h2>
+                <div class="container">
+                    Clase2
+                </div>
+                <div class="container">
+                    Clase 22
+                </div>
+            </section>
+
+            <section class="contenedor_texto">
+                <div id="contenedor_caja">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. A inventore deleniti autem, quaerat
+                        tempora debitis fugiat, repellendus vel quisquam dolores magnam accusantium, nostrum
+                        exercitationem totam quae! Rem error nam dicta.
+                    </p>
+                </div>
+                <p> Otro texto</p>
+            </section>
+            <hr>
+            <section>
+                <!-- Lista no ordenada -->
+                <ul class="lista">
+                    <li>link 1</li>
+                    <li>link 2</li>
+                    <li>link 3</li>
+                    <li>link 4</li>
+                    <li>link 5</li>
+                    <li>link 6</li>
+                    <li>link 7</li>
+                </ul>
+            </section>
+            <hr>
+            <section>
+                <!-- Lista no ordenada -->
+                <ul class="lista-hermanos">
+                    <li>
+                        <a>link 1</a>
+                    </li>
+                    <li>link 2</li>
+                    <li>link 3</li>
+                </ul>
+            </section>
+
+        </body>
+    </main>
